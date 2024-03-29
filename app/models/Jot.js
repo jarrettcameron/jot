@@ -9,16 +9,16 @@ export class Jot {
     }
 
     get selectMenuTemplate() {
-        return `<div class="col-12">
-        <div class="row align-content-center justify-content-around">
+        return `<div class="py-2 col-12">
+        <div class="ps-4 row align-content-center justify-content-around">
           <div class="col">
             <h4><span class="border-bottom border-5" style="border-color: ${this.color} !important;">${this.name}</span></h4>
           </div>
-          <div class="col-2 text-end">
-            <h4>EDIT</h4>
+          <div class="col-xl-2 col-3 text-end">
+            <button class="btn fs-4 float-end" onclick="app.JotsController.selectActive('${this.name}')">EDIT</button>
           </div>
-          <div class="col-2 text-end">
-            <h4 class="text-danger">DELETE</h4>
+          <div class="col-xl-2 col-3 text-end">
+            <button class="btn fs-4 text-danger float-end">DELETE</button>
           </div>
         </div>
       </div>`

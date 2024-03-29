@@ -9,8 +9,15 @@ class ObservableAppState extends EventEmitter {
       name: "HTML",
       body: "Test",
       color: 'yellow'
+    }),
+    new Jot({
+      name: "HTML",
+      body: "Test",
+      color: 'yellow'
     })
   ]
+
+  activeJot = null
 
 }
 
