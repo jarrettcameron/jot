@@ -18,7 +18,7 @@ export class Jot {
             <button class="btn fs-4 float-end" onclick="app.JotsController.selectActive('${this.name}')">EDIT</button>
           </div>
           <div class="col-xl-2 col-3 text-end">
-            <button class="btn fs-4 text-danger float-end">DELETE</button>
+            <button class="btn fs-4 text-danger float-end" onclick="app.JotsController.destroyJot('${this.name}')">DELETE</button>
           </div>
         </div>
       </div>`

@@ -19,6 +19,7 @@ h4,
 h5,
 h6,
 a,
+a:hover,
 .btn {
     color: #212121;
     font-weight: 800 !important;
@@ -40,4 +41,10 @@ a,
     background-color: #e1e1cd;
     border: none !important;
     outline: none !important;
+}
+
+.text-emp {
+    font-style: italic;
+    font-weight: 300 !important;
+    color: #7f7f7f !important;
 }

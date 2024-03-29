@@ -15,9 +15,10 @@ export class CreateController {
             let jot = jotsService.createJot(formData)
             jotsService.saveJots()
             window.location.href = "#"
-            return
+        } else {
+            Pop.error("A jot with that name already exists. Please pick a new name.")
+
         }
-        Pop.error("A jot with that name already exists. Please pick a new name.")
     }
 
 }
