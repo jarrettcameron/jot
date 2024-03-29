@@ -10,14 +10,14 @@ export class Jot {
 
   get selectMenuTemplate() {
     return `<div class="py-2 col-12">
-        <div class="ps-4 row align-content-center justify-content-around">
+        <div class="ps-4 row align-content-center justify-content-sm-around justify-content-end">
           <div class="col">
             <h4><span class="border-bottom border-5" style="border-color: ${this.color} !important;">${this.name}</span></h4>
           </div>
-          <div class="col-xl-2 col-3 text-end">
+          <div class="col-xl-2 col-sm-3 col-5 text-end">
             <button class="btn fs-4 float-end" onclick="app.JotsController.selectActive('${this.name}')">EDIT</button>
           </div>
-          <div class="col-xl-2 col-3 text-end">
+          <div class="col-xl-2 col-sm-3 col-5 text-end">
             <button class="btn fs-4 text-danger float-end" onclick="app.JotsController.destroyJot('${this.name}')">DELETE</button>
           </div>
         </div>
@@ -35,7 +35,7 @@ export class Jot {
         </div>
       </div>
     </div>
-    <p>Created at ${this.createdAt.toLocaleString()}<br>Updated at ${this.updatedAt.toLocaleString()}</p>
+    <p class="mt-md-0 mt-3">Created at <span class="d-md-inline d-block">${this.createdAt.toLocaleString()}</span><br>Updated at <span class="d-md-inline d-block">${this.updatedAt.toLocaleString()}</span></p>
     `
   }
 }
