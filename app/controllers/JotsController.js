@@ -5,6 +5,7 @@ import { setHTML, setText } from "../utils/Writer.js"
 export class JotsController {
 
     constructor() {
+        jotsService.loadJots()
         this.drawJots()
     }
 

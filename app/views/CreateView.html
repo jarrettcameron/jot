@@ -1,0 +1,26 @@
+<main class="container mt-5 pt-5">
+    <section class="px-5 row justify-content-center">
+        <div class="col-md-8 col-lg-6 col-11">
+            <div class="row align-content-center justify-content-center">
+                <div class="col-12">
+                    <h3 class="text-center">Create a Jot</h3>
+                    <form onsubmit="app.CreateController.createJot()"
+                        class="mt-3 row align-items-center justify-content-center">
+                        <div class="col-10 form-floating">
+                            <input class="form-control" type="text" id="name" name="name" required minlength="3"
+                                maxlength="15">
+                            <label class="ps-4" for="name">Name</label>
+                        </div>
+                        <div class="col-2">
+                            <label for="">Color</label>
+                            <input class="btn form-control-color" type="color" name="color" id="color" value="#FFFF00">
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-md-6 col-12 mt-4">
+                            <button class="w-100 btn form-control text-dark py-2 px-4">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

@@ -8,12 +8,12 @@ class ObservableAppState extends EventEmitter {
     new Jot({
       name: "HTML",
       body: "Test",
-      color: 'yellow'
+      color: '#000000'
     }),
     new Jot({
-      name: "HTML",
+      name: "CSS",
       body: "Test",
-      color: 'yellow'
+      color: '#3663F3'
     })
   ]
 
