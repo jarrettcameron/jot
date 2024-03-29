@@ -7,6 +7,8 @@ export class JotsController {
     constructor() {
         jotsService.loadJots()
         this.drawJots()
+
+        AppState.on('jots', this.drawJots)
     }
 
     drawJots() {

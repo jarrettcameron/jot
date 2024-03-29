@@ -7,6 +7,13 @@ class JotsService {
 
     }
 
+    createJot(data) {
+        let jot = new Jot(data)
+        AppState.jots.push(jot)
+        AppState.activeJot = jot
+        return jot
+    }
+
     saveJots() {
         saveState('jots', AppState.jots)
     }
