@@ -2,13 +2,14 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #212121 !important;
     background-color: #fcfce6;
+    min-height: 100dvh;
 }
 
 .emphasis-font {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-h1.emphasis-font {
+a.emphasis-font {
     font-size: calc(3.5rem + 1.5vw);
 }
 
@@ -47,4 +48,10 @@ a:hover,
     font-style: italic;
     font-weight: 300 !important;
     color: #7f7f7f !important;
+}
+
+.form-control.hf {
+    min-height: 300PX;
+    height: 50dvh;
+    font-size: 16px;
 }
