@@ -17,7 +17,6 @@ export class CreateController {
             window.location.href = "#"
         } else {
             Pop.error("A jot with that name already exists. Please pick a new name.")
-
         }
     }
 
