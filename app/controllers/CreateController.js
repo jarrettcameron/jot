@@ -14,7 +14,7 @@ export class CreateController {
         if (AppState.jots.filter(x => x.name == formData.name).length == 0) {
             let jot = jotsService.createJot(formData)
             jotsService.saveJots()
-            window.location.href = "#"
+            window.location.href = "#/editor"
         } else {
             Pop.error("A jot with that name already exists. Please pick a new name.")
         }
